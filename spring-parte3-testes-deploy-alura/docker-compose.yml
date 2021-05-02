@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "9092:9092"
+    environment:
+      SPRING_PROFILES_ACTIVE: "prod"
+      FORUM_APP_PORT: "9092"
+      FORUM_DATABASE_URL: "jdbc:h2:mem:alura-forum"
+      FORUM_DATABASE_USERNAME: "sa"
+      FORUM_DATABASE_PASSWORD: ""
+      FORUM_JWT_SECRET: "123456"
