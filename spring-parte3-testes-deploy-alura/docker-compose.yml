@@ -6,7 +6,7 @@ services:
       - "9092:9092"
     environment:
       SPRING_PROFILES_ACTIVE: "prod"
-      FORUM_APP_PORT: "9092"
+      PORT: "9092"
       FORUM_DATABASE_URL: "jdbc:h2:mem:alura-forum"
       FORUM_DATABASE_USERNAME: "sa"
       FORUM_DATABASE_PASSWORD: ""
